@@ -1,0 +1,1185 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471CA4B5248140AD00C30B87 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CA4B4248140AD00C30B87 /* SignUpVC.swift */; };
+		471DC47924881C2B001B4724 /* BluetoothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DC47824881C2B001B4724 /* BluetoothVC.swift */; };
+		47205E5A24475833000FC641 /* BasePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47205E5924475833000FC641 /* BasePlayer.swift */; };
+		47205E5C2447584C000FC641 /* BasePlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47205E5B2447584C000FC641 /* BasePlayer.xib */; };
+		474F658B243F8979004F6381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F658A243F8979004F6381 /* AppDelegate.swift */; };
+		474F658D243F8979004F6381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F658C243F8979004F6381 /* SceneDelegate.swift */; };
+		474F658F243F8979004F6381 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F658E243F8979004F6381 /* PlayVC.swift */; };
+		474F6592243F8979004F6381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474F6590243F8979004F6381 /* Main.storyboard */; };
+		474F6594243F897A004F6381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474F6593243F897A004F6381 /* Assets.xcassets */; };
+		474F6597243F897A004F6381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474F6595243F897A004F6381 /* LaunchScreen.storyboard */; };
+		474F65A2243F897A004F6381 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F65A1243F897A004F6381 /* TicTacToeTests.swift */; };
+		474F65AD243F897A004F6381 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F65AC243F897A004F6381 /* TicTacToeUITests.swift */; };
+		474F65BC243F908C004F6381 /* XOCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F65BA243F908C004F6381 /* XOCell.swift */; };
+		474F65BD243F908C004F6381 /* XOCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474F65BB243F908C004F6381 /* XOCell.xib */; };
+		474F65C0243F9F7D004F6381 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F65BF243F9F7D004F6381 /* StaticData.swift */; };
+		475CB7DD2472C03800761BEE /* Jelly Crazies.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 475CB7DC2472C03800761BEE /* Jelly Crazies.ttf */; };
+		4787A0152448AEC700E97062 /* BasePlayerOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A0142448AEC700E97062 /* BasePlayerOnline.swift */; };
+		4787A0172448AED800E97062 /* BasePlayerOnline.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4787A0162448AED800E97062 /* BasePlayerOnline.xib */; };
+		479002622442F15900D23646 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479002612442F15900D23646 /* Utilities.swift */; };
+		47900264244308D300D23646 /* BABYK___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 47900263244308D300D23646 /* BABYK___.TTF */; };
+		47900266244319DD00D23646 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47900265244319DD00D23646 /* HomeVC.swift */; };
+		4798C38E2449A7F900BCEB9D /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C38D2449A7F900BCEB9D /* Configs.swift */; };
+		4798C3902449A84C00BCEB9D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C38F2449A84C00BCEB9D /* APIRouter.swift */; };
+		4798C3922449AB8400BCEB9D /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3912449AB8400BCEB9D /* SocketIOManager.swift */; };
+		4798C3942449AC9600BCEB9D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3932449AC9600BCEB9D /* BaseResponse.swift */; };
+		4798C3962449AD5400BCEB9D /* MGConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3952449AD5400BCEB9D /* MGConnection.swift */; };
+		4798C3992449B05400BCEB9D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3982449B05400BCEB9D /* LoginModel.swift */; };
+		4798C39C2449C62D00BCEB9D /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C39B2449C62D00BCEB9D /* StringExt.swift */; };
+		4798C3A02449C6FD00BCEB9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C39F2449C6FD00BCEB9D /* User.swift */; };
+		4798C3A32449CA5500BCEB9D /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3A22449CA5500BCEB9D /* UserDAO.swift */; };
+		4798C3A6244A038800BCEB9D /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4798C3A4244A038800BCEB9D /* RoomCell.swift */; };
+		4798C3A7244A038800BCEB9D /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4798C3A5244A038800BCEB9D /* RoomCell.xib */; };
+		4798C3A9244B19C100BCEB9D /* BungeeShade-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4798C3A8244B19C100BCEB9D /* BungeeShade-Regular.ttf */; };
+		47A6589024816099007504DF /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A6588F24816099007504DF /* UIViewExt.swift */; };
+		47A65892248163DF007504DF /* BUBBLEGUMS.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 47A65891248163DF007504DF /* BUBBLEGUMS.TTF */; };
+		47A658942481748E007504DF /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A658932481748E007504DF /* RegisterResponse.swift */; };
+		47AB2E3324425C4000EE5E71 /* PickSideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB2E3224425C4000EE5E71 /* PickSideVC.swift */; };
+		47C587E02440641800B2338E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C587DF2440641800B2338E /* GradientView.swift */; };
+		47C587E224421E5000B2338E /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C587E124421E5000B2338E /* Textfield.swift */; };
+		47C587E424421FD100B2338E /* ButtonGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C587E324421FD100B2338E /* ButtonGradient.swift */; };
+		47C587E92442235100B2338E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C587E82442235100B2338E /* LoginVC.swift */; };
+		47E025C6244618090069DAF4 /* RoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E025C5244618090069DAF4 /* RoomVC.swift */; };
+		47F5F2152444AD0E003812BB /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2032444AD0D003812BB /* Montserrat-ExtraBoldItalic.ttf */; };
+		47F5F2162444AD0E003812BB /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2042444AD0D003812BB /* Montserrat-SemiBoldItalic.ttf */; };
+		47F5F2172444AD0E003812BB /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2052444AD0D003812BB /* Montserrat-SemiBold.ttf */; };
+		47F5F2182444AD0E003812BB /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2062444AD0D003812BB /* Montserrat-BoldItalic.ttf */; };
+		47F5F2192444AD0E003812BB /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2072444AD0D003812BB /* Montserrat-Thin.ttf */; };
+		47F5F21A2444AD0E003812BB /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2082444AD0D003812BB /* Montserrat-Italic.ttf */; };
+		47F5F21B2444AD0E003812BB /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2092444AD0D003812BB /* Montserrat-ThinItalic.ttf */; };
+		47F5F21C2444AD0E003812BB /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20A2444AD0D003812BB /* Montserrat-Medium.ttf */; };
+		47F5F21D2444AD0E003812BB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20B2444AD0D003812BB /* Montserrat-Bold.ttf */; };
+		47F5F21E2444AD0E003812BB /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20C2444AD0D003812BB /* Montserrat-LightItalic.ttf */; };
+		47F5F21F2444AD0E003812BB /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20D2444AD0D003812BB /* Montserrat-ExtraBold.ttf */; };
+		47F5F2202444AD0E003812BB /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20E2444AD0D003812BB /* Montserrat-MediumItalic.ttf */; };
+		47F5F2212444AD0E003812BB /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F20F2444AD0D003812BB /* Montserrat-BlackItalic.ttf */; };
+		47F5F2222444AD0E003812BB /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2102444AD0D003812BB /* Montserrat-ExtraLightItalic.ttf */; };
+		47F5F2232444AD0E003812BB /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2112444AD0D003812BB /* Montserrat-Light.ttf */; };
+		47F5F2242444AD0E003812BB /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2122444AD0D003812BB /* Montserrat-ExtraLight.ttf */; };
+		47F5F2252444AD0E003812BB /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2132444AD0D003812BB /* Montserrat-Black.ttf */; };
+		47F5F2262444AD0E003812BB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F5F2142444AD0E003812BB /* Montserrat-Regular.ttf */; };
+		47F737A02478BF4D00CC2442 /* Stateface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737912478BF4000CC2442 /* Stateface.ttf */; };
+		47F737A12478BF4D00CC2442 /* Icofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737922478BF4100CC2442 /* Icofont.ttf */; };
+		47F737A22478BF4D00CC2442 /* FontAwesomeRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737932478BF4200CC2442 /* FontAwesomeRegular.ttf */; };
+		47F737A32478BF4D00CC2442 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737942478BF4300CC2442 /* MaterialIcons.ttf */; };
+		47F737A42478BF4D00CC2442 /* Dripicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737952478BF4400CC2442 /* Dripicons.ttf */; };
+		47F737A52478BF4D00CC2442 /* FontAwesomeBrands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737962478BF4400CC2442 /* FontAwesomeBrands.ttf */; };
+		47F737A62478BF4D00CC2442 /* TypIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737972478BF4500CC2442 /* TypIcons.ttf */; };
+		47F737A72478BF4D00CC2442 /* WeatherIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737982478BF4600CC2442 /* WeatherIcons.ttf */; };
+		47F737A82478BF4D00CC2442 /* MapIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F737992478BF4700CC2442 /* MapIcons.ttf */; };
+		47F737A92478BF4D00CC2442 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379A2478BF4800CC2442 /* Ionicons.ttf */; };
+		47F737AA2478BF4D00CC2442 /* FontAwesomeSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379B2478BF4900CC2442 /* FontAwesomeSolid.ttf */; };
+		47F737AB2478BF4D00CC2442 /* OpenIconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379C2478BF4A00CC2442 /* OpenIconic.ttf */; };
+		47F737AC2478BF4D00CC2442 /* Emoji.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379D2478BF4B00CC2442 /* Emoji.ttf */; };
+		47F737AD2478BF4D00CC2442 /* Linearicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379E2478BF4C00CC2442 /* Linearicons.ttf */; };
+		47F737AE2478BF4D00CC2442 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F7379F2478BF4C00CC2442 /* FontAwesome.ttf */; };
+		47F7C61F2482A57200551E2C /* RankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7C61E2482A57200551E2C /* RankingVC.swift */; };
+		47F7C6252482AB5E00551E2C /* RankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7C6232482AB5E00551E2C /* RankCell.swift */; };
+		47F7C6262482AB5E00551E2C /* RankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F7C6242482AB5E00551E2C /* RankCell.xib */; };
+		808777B8B65C396A82BD80CC /* libPods-TicTacToeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1774EB6E2952CFAEB79F4F69 /* libPods-TicTacToeTests.a */; };
+		8DE560A29B715DE83F80E1E7 /* libPods-TicTacToe-TicTacToeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AB1170D954792B5F6AF562 /* libPods-TicTacToe-TicTacToeUITests.a */; };
+		EF8AE3D13F22AA1FE95AB779 /* libPods-TicTacToe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E44D39FF79AD633FF62C6F8A /* libPods-TicTacToe.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		474F659E243F897A004F6381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 474F657F243F8978004F6381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474F6586243F8978004F6381;
+			remoteInfo = TicTacToe;
+		};
+		474F65A9243F897A004F6381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 474F657F243F8978004F6381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474F6586243F8978004F6381;
+			remoteInfo = TicTacToe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04226D6B773F131BEBC94526 /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
+		0936BE5352C0874B20AEF79A /* Pods-TicTacToe-TicTacToeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe-TicTacToeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToe-TicTacToeUITests/Pods-TicTacToe-TicTacToeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1774EB6E2952CFAEB79F4F69 /* libPods-TicTacToeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		471CA4B4248140AD00C30B87 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		471DC47824881C2B001B4724 /* BluetoothVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothVC.swift; sourceTree = "<group>"; };
+		47205E5924475833000FC641 /* BasePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePlayer.swift; sourceTree = "<group>"; };
+		47205E5B2447584C000FC641 /* BasePlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePlayer.xib; sourceTree = "<group>"; };
+		474F6587243F8978004F6381 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		474F658A243F8979004F6381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		474F658C243F8979004F6381 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		474F658E243F8979004F6381 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		474F6591243F8979004F6381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		474F6593243F897A004F6381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		474F6596243F897A004F6381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		474F6598243F897A004F6381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		474F659D243F897A004F6381 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		474F65A1243F897A004F6381 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
+		474F65A3243F897A004F6381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		474F65A8243F897A004F6381 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		474F65AC243F897A004F6381 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
+		474F65AE243F897A004F6381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		474F65BA243F908C004F6381 /* XOCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOCell.swift; sourceTree = "<group>"; };
+		474F65BB243F908C004F6381 /* XOCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XOCell.xib; sourceTree = "<group>"; };
+		474F65BF243F9F7D004F6381 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		475CB7DC2472C03800761BEE /* Jelly Crazies.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelly Crazies.ttf"; sourceTree = "<group>"; };
+		4787A0142448AEC700E97062 /* BasePlayerOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePlayerOnline.swift; sourceTree = "<group>"; };
+		4787A0162448AED800E97062 /* BasePlayerOnline.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePlayerOnline.xib; sourceTree = "<group>"; };
+		479002612442F15900D23646 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		47900263244308D300D23646 /* BABYK___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BABYK___.TTF"; path = "../../../../../../Downloads/baby-kruffy/BABYK___.TTF"; sourceTree = "<group>"; };
+		47900265244319DD00D23646 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		4798C38D2449A7F900BCEB9D /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		4798C38F2449A84C00BCEB9D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		4798C3912449AB8400BCEB9D /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		4798C3932449AC9600BCEB9D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		4798C3952449AD5400BCEB9D /* MGConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGConnection.swift; sourceTree = "<group>"; };
+		4798C3982449B05400BCEB9D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		4798C39B2449C62D00BCEB9D /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		4798C39F2449C6FD00BCEB9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4798C3A22449CA5500BCEB9D /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		4798C3A4244A038800BCEB9D /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		4798C3A5244A038800BCEB9D /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		4798C3A8244B19C100BCEB9D /* BungeeShade-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeShade-Regular.ttf"; sourceTree = "<group>"; };
+		47A6588F24816099007504DF /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		47A65891248163DF007504DF /* BUBBLEGUMS.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BUBBLEGUMS.TTF; sourceTree = "<group>"; };
+		47A658932481748E007504DF /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		47AB2E3224425C4000EE5E71 /* PickSideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSideVC.swift; sourceTree = "<group>"; };
+		47C587DF2440641800B2338E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		47C587E124421E5000B2338E /* Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
+		47C587E324421FD100B2338E /* ButtonGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGradient.swift; sourceTree = "<group>"; };
+		47C587E82442235100B2338E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		47E025C5244618090069DAF4 /* RoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomVC.swift; sourceTree = "<group>"; };
+		47F5F2032444AD0D003812BB /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		47F5F2042444AD0D003812BB /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		47F5F2052444AD0D003812BB /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		47F5F2062444AD0D003812BB /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		47F5F2072444AD0D003812BB /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		47F5F2082444AD0D003812BB /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		47F5F2092444AD0D003812BB /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ThinItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		47F5F20A2444AD0D003812BB /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		47F5F20B2444AD0D003812BB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		47F5F20C2444AD0D003812BB /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-LightItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		47F5F20D2444AD0D003812BB /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		47F5F20E2444AD0D003812BB /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-MediumItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		47F5F20F2444AD0D003812BB /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BlackItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		47F5F2102444AD0D003812BB /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLightItalic.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		47F5F2112444AD0D003812BB /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		47F5F2122444AD0D003812BB /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		47F5F2132444AD0D003812BB /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		47F5F2142444AD0E003812BB /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		47F737912478BF4000CC2442 /* Stateface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stateface.ttf; sourceTree = "<group>"; };
+		47F737922478BF4100CC2442 /* Icofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icofont.ttf; sourceTree = "<group>"; };
+		47F737932478BF4200CC2442 /* FontAwesomeRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesomeRegular.ttf; sourceTree = "<group>"; };
+		47F737942478BF4300CC2442 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		47F737952478BF4400CC2442 /* Dripicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dripicons.ttf; sourceTree = "<group>"; };
+		47F737962478BF4400CC2442 /* FontAwesomeBrands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesomeBrands.ttf; sourceTree = "<group>"; };
+		47F737972478BF4500CC2442 /* TypIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TypIcons.ttf; sourceTree = "<group>"; };
+		47F737982478BF4600CC2442 /* WeatherIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WeatherIcons.ttf; sourceTree = "<group>"; };
+		47F737992478BF4700CC2442 /* MapIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MapIcons.ttf; sourceTree = "<group>"; };
+		47F7379A2478BF4800CC2442 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		47F7379B2478BF4900CC2442 /* FontAwesomeSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesomeSolid.ttf; sourceTree = "<group>"; };
+		47F7379C2478BF4A00CC2442 /* OpenIconic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenIconic.ttf; sourceTree = "<group>"; };
+		47F7379D2478BF4B00CC2442 /* Emoji.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emoji.ttf; sourceTree = "<group>"; };
+		47F7379E2478BF4C00CC2442 /* Linearicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Linearicons.ttf; sourceTree = "<group>"; };
+		47F7379F2478BF4C00CC2442 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		47F7C61E2482A57200551E2C /* RankingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingVC.swift; sourceTree = "<group>"; };
+		47F7C6232482AB5E00551E2C /* RankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCell.swift; sourceTree = "<group>"; };
+		47F7C6242482AB5E00551E2C /* RankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankCell.xib; sourceTree = "<group>"; };
+		69A8D52F5FE647CA6E562544 /* Pods-TicTacToeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88AB1170D954792B5F6AF562 /* libPods-TicTacToe-TicTacToeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToe-TicTacToeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CD4C2B8384C4BC53AFBEA2 /* Pods-TicTacToeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.release.xcconfig"; path = "Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A315646D4D503B623EF2DE50 /* Pods-TicTacToe-TicTacToeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe-TicTacToeUITests.release.xcconfig"; path = "Target Support Files/Pods-TicTacToe-TicTacToeUITests/Pods-TicTacToe-TicTacToeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E44D39FF79AD633FF62C6F8A /* libPods-TicTacToe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBF7135C403F4F0C6DD2EC5 /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		474F6584243F8978004F6381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8AE3D13F22AA1FE95AB779 /* libPods-TicTacToe.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F659A243F897A004F6381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808777B8B65C396A82BD80CC /* libPods-TicTacToeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F65A5243F897A004F6381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE560A29B715DE83F80E1E7 /* libPods-TicTacToe-TicTacToeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47205E5824475807000FC641 /* BasePlayerOffline */ = {
+			isa = PBXGroup;
+			children = (
+				47205E5924475833000FC641 /* BasePlayer.swift */,
+				47205E5B2447584C000FC641 /* BasePlayer.xib */,
+			);
+			path = BasePlayerOffline;
+			sourceTree = "<group>";
+		};
+		474F657E243F8978004F6381 = {
+			isa = PBXGroup;
+			children = (
+				474F6589243F8979004F6381 /* TicTacToe */,
+				474F65A0243F897A004F6381 /* TicTacToeTests */,
+				474F65AB243F897A004F6381 /* TicTacToeUITests */,
+				474F6588243F8978004F6381 /* Products */,
+				5777EB10F93372EA5FAF39A9 /* Pods */,
+				ACE3C3052E3153ADC2FF0152 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		474F6588243F8978004F6381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				474F6587243F8978004F6381 /* TicTacToe.app */,
+				474F659D243F897A004F6381 /* TicTacToeTests.xctest */,
+				474F65A8243F897A004F6381 /* TicTacToeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		474F6589243F8979004F6381 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				4798C3A12449CA4500BCEB9D /* DAO */,
+				4798C39D2449C6D700BCEB9D /* DB */,
+				4798C39A2449C61C00BCEB9D /* Extensions */,
+				4798C3972449B03E00BCEB9D /* Models */,
+				4798C38C2449A7E800BCEB9D /* API */,
+				47C587E5244221BD00B2338E /* Fonts */,
+				474F65C7243FA15A004F6381 /* SupportingFiles */,
+				474F65C6243FA0A3004F6381 /* Views */,
+				474F65C3243FA07F004F6381 /* AppDelegate */,
+				474F65C1243FA050004F6381 /* ViewControllers */,
+				474F65BE243F9F50004F6381 /* Utils */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		474F65A0243F897A004F6381 /* TicTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				474F65A1243F897A004F6381 /* TicTacToeTests.swift */,
+				474F65A3243F897A004F6381 /* Info.plist */,
+			);
+			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		474F65AB243F897A004F6381 /* TicTacToeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				474F65AC243F897A004F6381 /* TicTacToeUITests.swift */,
+				474F65AE243F897A004F6381 /* Info.plist */,
+			);
+			path = TicTacToeUITests;
+			sourceTree = "<group>";
+		};
+		474F65BE243F9F50004F6381 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4798C3912449AB8400BCEB9D /* SocketIOManager.swift */,
+				474F65BF243F9F7D004F6381 /* StaticData.swift */,
+				479002612442F15900D23646 /* Utilities.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		474F65C1243FA050004F6381 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				474F658E243F8979004F6381 /* PlayVC.swift */,
+				47C587E82442235100B2338E /* LoginVC.swift */,
+				47AB2E3224425C4000EE5E71 /* PickSideVC.swift */,
+				47900265244319DD00D23646 /* HomeVC.swift */,
+				47E025C5244618090069DAF4 /* RoomVC.swift */,
+				471CA4B4248140AD00C30B87 /* SignUpVC.swift */,
+				47F7C61E2482A57200551E2C /* RankingVC.swift */,
+				471DC47824881C2B001B4724 /* BluetoothVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		474F65C3243FA07F004F6381 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				474F658A243F8979004F6381 /* AppDelegate.swift */,
+				474F658C243F8979004F6381 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		474F65C4243FA08C004F6381 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				47F7C6202482A99000551E2C /* RankCell */,
+				47E025C7244639970069DAF4 /* RoomCell */,
+				474F65BA243F908C004F6381 /* XOCell.swift */,
+				474F65BB243F908C004F6381 /* XOCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		474F65C5243FA099004F6381 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				4787A0132448AEA600E97062 /* BasePlayerOnline */,
+				47205E5824475807000FC641 /* BasePlayerOffline */,
+				47C587DF2440641800B2338E /* GradientView.swift */,
+				47C587E124421E5000B2338E /* Textfield.swift */,
+				47C587E324421FD100B2338E /* ButtonGradient.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		474F65C6243FA0A3004F6381 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				474F65C4243FA08C004F6381 /* CustomCell */,
+				474F65C5243FA099004F6381 /* CustomView */,
+				474F6590243F8979004F6381 /* Main.storyboard */,
+				474F6595243F897A004F6381 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		474F65C7243FA15A004F6381 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				47F737952478BF4400CC2442 /* Dripicons.ttf */,
+				47F7379D2478BF4B00CC2442 /* Emoji.ttf */,
+				47F7379F2478BF4C00CC2442 /* FontAwesome.ttf */,
+				47F737962478BF4400CC2442 /* FontAwesomeBrands.ttf */,
+				47F737932478BF4200CC2442 /* FontAwesomeRegular.ttf */,
+				47F7379B2478BF4900CC2442 /* FontAwesomeSolid.ttf */,
+				47F737922478BF4100CC2442 /* Icofont.ttf */,
+				47F7379A2478BF4800CC2442 /* Ionicons.ttf */,
+				47F7379E2478BF4C00CC2442 /* Linearicons.ttf */,
+				47F737992478BF4700CC2442 /* MapIcons.ttf */,
+				47F737942478BF4300CC2442 /* MaterialIcons.ttf */,
+				47F7379C2478BF4A00CC2442 /* OpenIconic.ttf */,
+				47F737912478BF4000CC2442 /* Stateface.ttf */,
+				47F737972478BF4500CC2442 /* TypIcons.ttf */,
+				47F737982478BF4600CC2442 /* WeatherIcons.ttf */,
+				474F6593243F897A004F6381 /* Assets.xcassets */,
+				474F6598243F897A004F6381 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4787A0132448AEA600E97062 /* BasePlayerOnline */ = {
+			isa = PBXGroup;
+			children = (
+				4787A0142448AEC700E97062 /* BasePlayerOnline.swift */,
+				4787A0162448AED800E97062 /* BasePlayerOnline.xib */,
+			);
+			path = BasePlayerOnline;
+			sourceTree = "<group>";
+		};
+		4798C38C2449A7E800BCEB9D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4798C38D2449A7F900BCEB9D /* Configs.swift */,
+				4798C38F2449A84C00BCEB9D /* APIRouter.swift */,
+				4798C3932449AC9600BCEB9D /* BaseResponse.swift */,
+				4798C3952449AD5400BCEB9D /* MGConnection.swift */,
+				47A658932481748E007504DF /* RegisterResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4798C3972449B03E00BCEB9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4798C3982449B05400BCEB9D /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4798C39A2449C61C00BCEB9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4798C39B2449C62D00BCEB9D /* StringExt.swift */,
+				47A6588F24816099007504DF /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4798C39D2449C6D700BCEB9D /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4798C39E2449C6F200BCEB9D /* Entity */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		4798C39E2449C6F200BCEB9D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4798C39F2449C6FD00BCEB9D /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4798C3A12449CA4500BCEB9D /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				4798C3A22449CA5500BCEB9D /* UserDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		47C587E5244221BD00B2338E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47F5F2022444ACF3003812BB /* Montserrat */,
+				4798C3A8244B19C100BCEB9D /* BungeeShade-Regular.ttf */,
+				475CB7DC2472C03800761BEE /* Jelly Crazies.ttf */,
+				47900263244308D300D23646 /* BABYK___.TTF */,
+				47A65891248163DF007504DF /* BUBBLEGUMS.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		47E025C7244639970069DAF4 /* RoomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4798C3A4244A038800BCEB9D /* RoomCell.swift */,
+				4798C3A5244A038800BCEB9D /* RoomCell.xib */,
+			);
+			path = RoomCell;
+			sourceTree = "<group>";
+		};
+		47F5F2022444ACF3003812BB /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				47F5F2132444AD0D003812BB /* Montserrat-Black.ttf */,
+				47F5F20F2444AD0D003812BB /* Montserrat-BlackItalic.ttf */,
+				47F5F20B2444AD0D003812BB /* Montserrat-Bold.ttf */,
+				47F5F2062444AD0D003812BB /* Montserrat-BoldItalic.ttf */,
+				47F5F20D2444AD0D003812BB /* Montserrat-ExtraBold.ttf */,
+				47F5F2032444AD0D003812BB /* Montserrat-ExtraBoldItalic.ttf */,
+				47F5F2122444AD0D003812BB /* Montserrat-ExtraLight.ttf */,
+				47F5F2102444AD0D003812BB /* Montserrat-ExtraLightItalic.ttf */,
+				47F5F2082444AD0D003812BB /* Montserrat-Italic.ttf */,
+				47F5F2112444AD0D003812BB /* Montserrat-Light.ttf */,
+				47F5F20C2444AD0D003812BB /* Montserrat-LightItalic.ttf */,
+				47F5F20A2444AD0D003812BB /* Montserrat-Medium.ttf */,
+				47F5F20E2444AD0D003812BB /* Montserrat-MediumItalic.ttf */,
+				47F5F2142444AD0E003812BB /* Montserrat-Regular.ttf */,
+				47F5F2052444AD0D003812BB /* Montserrat-SemiBold.ttf */,
+				47F5F2042444AD0D003812BB /* Montserrat-SemiBoldItalic.ttf */,
+				47F5F2072444AD0D003812BB /* Montserrat-Thin.ttf */,
+				47F5F2092444AD0D003812BB /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		47F7C6202482A99000551E2C /* RankCell */ = {
+			isa = PBXGroup;
+			children = (
+				47F7C6232482AB5E00551E2C /* RankCell.swift */,
+				47F7C6242482AB5E00551E2C /* RankCell.xib */,
+			);
+			path = RankCell;
+			sourceTree = "<group>";
+		};
+		5777EB10F93372EA5FAF39A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF7135C403F4F0C6DD2EC5 /* Pods-TicTacToe.debug.xcconfig */,
+				04226D6B773F131BEBC94526 /* Pods-TicTacToe.release.xcconfig */,
+				0936BE5352C0874B20AEF79A /* Pods-TicTacToe-TicTacToeUITests.debug.xcconfig */,
+				A315646D4D503B623EF2DE50 /* Pods-TicTacToe-TicTacToeUITests.release.xcconfig */,
+				69A8D52F5FE647CA6E562544 /* Pods-TicTacToeTests.debug.xcconfig */,
+				A0CD4C2B8384C4BC53AFBEA2 /* Pods-TicTacToeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACE3C3052E3153ADC2FF0152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E44D39FF79AD633FF62C6F8A /* libPods-TicTacToe.a */,
+				88AB1170D954792B5F6AF562 /* libPods-TicTacToe-TicTacToeUITests.a */,
+				1774EB6E2952CFAEB79F4F69 /* libPods-TicTacToeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		474F6586243F8978004F6381 /* TicTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474F65B1243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
+			buildPhases = (
+				E1F1B35BE61628E7A7A94E8A /* [CP] Check Pods Manifest.lock */,
+				474F6583243F8978004F6381 /* Sources */,
+				474F6584243F8978004F6381 /* Frameworks */,
+				474F6585243F8978004F6381 /* Resources */,
+				C075C9D6A7E4BF64C3799EE3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicTacToe;
+			productName = TicTacToe;
+			productReference = 474F6587243F8978004F6381 /* TicTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		474F659C243F897A004F6381 /* TicTacToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474F65B4243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */;
+			buildPhases = (
+				B99BB706866F212E7FFB5A33 /* [CP] Check Pods Manifest.lock */,
+				474F6599243F897A004F6381 /* Sources */,
+				474F659A243F897A004F6381 /* Frameworks */,
+				474F659B243F897A004F6381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474F659F243F897A004F6381 /* PBXTargetDependency */,
+			);
+			name = TicTacToeTests;
+			productName = TicTacToeTests;
+			productReference = 474F659D243F897A004F6381 /* TicTacToeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		474F65A7243F897A004F6381 /* TicTacToeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474F65B7243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */;
+			buildPhases = (
+				CB0C09226654485E4B7CF996 /* [CP] Check Pods Manifest.lock */,
+				474F65A4243F897A004F6381 /* Sources */,
+				474F65A5243F897A004F6381 /* Frameworks */,
+				474F65A6243F897A004F6381 /* Resources */,
+				7EA85A7132AF833BCB0FF503 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474F65AA243F897A004F6381 /* PBXTargetDependency */,
+			);
+			name = TicTacToeUITests;
+			productName = TicTacToeUITests;
+			productReference = 474F65A8243F897A004F6381 /* TicTacToeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		474F657F243F8978004F6381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nguyen Chanh Dat";
+				TargetAttributes = {
+					474F6586243F8978004F6381 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					474F659C243F897A004F6381 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 474F6586243F8978004F6381;
+					};
+					474F65A7243F897A004F6381 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 474F6586243F8978004F6381;
+					};
+				};
+			};
+			buildConfigurationList = 474F6582243F8978004F6381 /* Build configuration list for PBXProject "TicTacToe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 474F657E243F8978004F6381;
+			productRefGroup = 474F6588243F8978004F6381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				474F6586243F8978004F6381 /* TicTacToe */,
+				474F659C243F897A004F6381 /* TicTacToeTests */,
+				474F65A7243F897A004F6381 /* TicTacToeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		474F6585243F8978004F6381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F5F2262444AD0E003812BB /* Montserrat-Regular.ttf in Resources */,
+				47F737A02478BF4D00CC2442 /* Stateface.ttf in Resources */,
+				47F5F2232444AD0E003812BB /* Montserrat-Light.ttf in Resources */,
+				47F737A22478BF4D00CC2442 /* FontAwesomeRegular.ttf in Resources */,
+				47F737AC2478BF4D00CC2442 /* Emoji.ttf in Resources */,
+				47F5F21F2444AD0E003812BB /* Montserrat-ExtraBold.ttf in Resources */,
+				47A65892248163DF007504DF /* BUBBLEGUMS.TTF in Resources */,
+				47F737AD2478BF4D00CC2442 /* Linearicons.ttf in Resources */,
+				47F5F21E2444AD0E003812BB /* Montserrat-LightItalic.ttf in Resources */,
+				474F6597243F897A004F6381 /* LaunchScreen.storyboard in Resources */,
+				474F6594243F897A004F6381 /* Assets.xcassets in Resources */,
+				47F5F2202444AD0E003812BB /* Montserrat-MediumItalic.ttf in Resources */,
+				47205E5C2447584C000FC641 /* BasePlayer.xib in Resources */,
+				47F5F2162444AD0E003812BB /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				47F5F21A2444AD0E003812BB /* Montserrat-Italic.ttf in Resources */,
+				47F737A82478BF4D00CC2442 /* MapIcons.ttf in Resources */,
+				4787A0172448AED800E97062 /* BasePlayerOnline.xib in Resources */,
+				47F5F21D2444AD0E003812BB /* Montserrat-Bold.ttf in Resources */,
+				47F737A12478BF4D00CC2442 /* Icofont.ttf in Resources */,
+				47F5F2252444AD0E003812BB /* Montserrat-Black.ttf in Resources */,
+				47F737AB2478BF4D00CC2442 /* OpenIconic.ttf in Resources */,
+				47F737A62478BF4D00CC2442 /* TypIcons.ttf in Resources */,
+				474F65BD243F908C004F6381 /* XOCell.xib in Resources */,
+				47F5F2152444AD0E003812BB /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				47F737A92478BF4D00CC2442 /* Ionicons.ttf in Resources */,
+				47F5F2172444AD0E003812BB /* Montserrat-SemiBold.ttf in Resources */,
+				47F737A42478BF4D00CC2442 /* Dripicons.ttf in Resources */,
+				4798C3A7244A038800BCEB9D /* RoomCell.xib in Resources */,
+				47F5F2192444AD0E003812BB /* Montserrat-Thin.ttf in Resources */,
+				47900264244308D300D23646 /* BABYK___.TTF in Resources */,
+				47F5F21C2444AD0E003812BB /* Montserrat-Medium.ttf in Resources */,
+				47F737AA2478BF4D00CC2442 /* FontAwesomeSolid.ttf in Resources */,
+				47F5F21B2444AD0E003812BB /* Montserrat-ThinItalic.ttf in Resources */,
+				47F737A32478BF4D00CC2442 /* MaterialIcons.ttf in Resources */,
+				47F5F2242444AD0E003812BB /* Montserrat-ExtraLight.ttf in Resources */,
+				47F737A72478BF4D00CC2442 /* WeatherIcons.ttf in Resources */,
+				47F737A52478BF4D00CC2442 /* FontAwesomeBrands.ttf in Resources */,
+				47F737AE2478BF4D00CC2442 /* FontAwesome.ttf in Resources */,
+				47F5F2182444AD0E003812BB /* Montserrat-BoldItalic.ttf in Resources */,
+				47F5F2222444AD0E003812BB /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				475CB7DD2472C03800761BEE /* Jelly Crazies.ttf in Resources */,
+				4798C3A9244B19C100BCEB9D /* BungeeShade-Regular.ttf in Resources */,
+				474F6592243F8979004F6381 /* Main.storyboard in Resources */,
+				47F5F2212444AD0E003812BB /* Montserrat-BlackItalic.ttf in Resources */,
+				47F7C6262482AB5E00551E2C /* RankCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F659B243F897A004F6381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F65A6243F897A004F6381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EA85A7132AF833BCB0FF503 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe-TicTacToeUITests/Pods-TicTacToe-TicTacToeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe-TicTacToeUITests/Pods-TicTacToe-TicTacToeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicTacToe-TicTacToeUITests/Pods-TicTacToe-TicTacToeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99BB706866F212E7FFB5A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C075C9D6A7E4BF64C3799EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0C09226654485E4B7CF996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToe-TicTacToeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F1B35BE61628E7A7A94E8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		474F6583243F8978004F6381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C587E224421E5000B2338E /* Textfield.swift in Sources */,
+				47E025C6244618090069DAF4 /* RoomVC.swift in Sources */,
+				47C587E424421FD100B2338E /* ButtonGradient.swift in Sources */,
+				47205E5A24475833000FC641 /* BasePlayer.swift in Sources */,
+				4798C3902449A84C00BCEB9D /* APIRouter.swift in Sources */,
+				474F65C0243F9F7D004F6381 /* StaticData.swift in Sources */,
+				474F658F243F8979004F6381 /* PlayVC.swift in Sources */,
+				47AB2E3324425C4000EE5E71 /* PickSideVC.swift in Sources */,
+				4798C3A6244A038800BCEB9D /* RoomCell.swift in Sources */,
+				47A6589024816099007504DF /* UIViewExt.swift in Sources */,
+				47C587E02440641800B2338E /* GradientView.swift in Sources */,
+				471CA4B5248140AD00C30B87 /* SignUpVC.swift in Sources */,
+				47C587E92442235100B2338E /* LoginVC.swift in Sources */,
+				4798C3992449B05400BCEB9D /* LoginModel.swift in Sources */,
+				471DC47924881C2B001B4724 /* BluetoothVC.swift in Sources */,
+				4798C39C2449C62D00BCEB9D /* StringExt.swift in Sources */,
+				47F7C61F2482A57200551E2C /* RankingVC.swift in Sources */,
+				479002622442F15900D23646 /* Utilities.swift in Sources */,
+				47F7C6252482AB5E00551E2C /* RankCell.swift in Sources */,
+				474F658B243F8979004F6381 /* AppDelegate.swift in Sources */,
+				4787A0152448AEC700E97062 /* BasePlayerOnline.swift in Sources */,
+				4798C3922449AB8400BCEB9D /* SocketIOManager.swift in Sources */,
+				47900266244319DD00D23646 /* HomeVC.swift in Sources */,
+				4798C3962449AD5400BCEB9D /* MGConnection.swift in Sources */,
+				4798C3A32449CA5500BCEB9D /* UserDAO.swift in Sources */,
+				4798C3942449AC9600BCEB9D /* BaseResponse.swift in Sources */,
+				474F65BC243F908C004F6381 /* XOCell.swift in Sources */,
+				4798C3A02449C6FD00BCEB9D /* User.swift in Sources */,
+				47A658942481748E007504DF /* RegisterResponse.swift in Sources */,
+				474F658D243F8979004F6381 /* SceneDelegate.swift in Sources */,
+				4798C38E2449A7F900BCEB9D /* Configs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F6599243F897A004F6381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474F65A2243F897A004F6381 /* TicTacToeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474F65A4243F897A004F6381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474F65AD243F897A004F6381 /* TicTacToeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		474F659F243F897A004F6381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474F6586243F8978004F6381 /* TicTacToe */;
+			targetProxy = 474F659E243F897A004F6381 /* PBXContainerItemProxy */;
+		};
+		474F65AA243F897A004F6381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474F6586243F8978004F6381 /* TicTacToe */;
+			targetProxy = 474F65A9243F897A004F6381 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		474F6590243F8979004F6381 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				474F6591243F8979004F6381 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		474F6595243F897A004F6381 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				474F6596243F897A004F6381 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		474F65AF243F897A004F6381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		474F65B0243F897A004F6381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		474F65B2243F897A004F6381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBF7135C403F4F0C6DD2EC5 /* Pods-TicTacToe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng2.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		474F65B3243F897A004F6381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04226D6B773F131BEBC94526 /* Pods-TicTacToe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		474F65B5243F897A004F6381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A8D52F5FE647CA6E562544 /* Pods-TicTacToeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Debug;
+		};
+		474F65B6243F897A004F6381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CD4C2B8384C4BC53AFBEA2 /* Pods-TicTacToeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Release;
+		};
+		474F65B8243F897A004F6381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0936BE5352C0874B20AEF79A /* Pods-TicTacToe-TicTacToeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng.TicTacToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicTacToe;
+			};
+			name = Debug;
+		};
+		474F65B9243F897A004F6381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A315646D4D503B623EF2DE50 /* Pods-TicTacToe-TicTacToeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5469SJB8T;
+				INFOPLIST_FILE = TicTacToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chanhdat.ng.TicTacToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicTacToe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		474F6582243F8978004F6381 /* Build configuration list for PBXProject "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474F65AF243F897A004F6381 /* Debug */,
+				474F65B0243F897A004F6381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474F65B1243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474F65B2243F897A004F6381 /* Debug */,
+				474F65B3243F897A004F6381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474F65B4243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474F65B5243F897A004F6381 /* Debug */,
+				474F65B6243F897A004F6381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474F65B7243F897A004F6381 /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474F65B8243F897A004F6381 /* Debug */,
+				474F65B9243F897A004F6381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 474F657F243F8978004F6381 /* Project object */;
+}

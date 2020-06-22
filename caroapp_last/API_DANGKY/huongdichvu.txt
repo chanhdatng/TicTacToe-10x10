@@ -1,0 +1,53 @@
+Thêm 2 dòng này vào index.js
+
+const {USER_ROUTE} = require('./routers/User');
+app.use('/user', USER_ROUTE);
+
+import module pg: npm install pg
+
+
+Tắt not null trong table USER ở 2 trường createdAt và updatedAt
+
+function trong postgre
+
+CREATE OR REPLACE FUNCTION public.prc_process_user(p_username character varying, p_pass character varying, p_email character varying, p_fullname character varying, p_action character, OUT p_err_code character, OUT p_err_desc character)
+ RETURNS record
+ LANGUAGE plpgsql
+AS $function$
+declare v_logInfo text;
+begin
+	v_logInfo  = 'Begin prc_process_user.p_username ' || p_username::varchar|| ',p_pass:' || p_pass::varchar|| 
+	',p_email:' || p_email::varchar|| ',p_fullname:' || p_fullname::varchar|| ',p_action:' || p_action::varchar;
+	RAISE LOG  'Begin prc_process_branch:%',  v_logInfo;
+	
+	p_err_code := '0';
+	p_err_desc := 'OK';
+
+	If p_action = 'ADD' then
+		if exists (select 1 from "public"."USER" u where u."username" = p_username) then
+			p_err_code := '-1';
+			p_err_desc := 'Username đã tồn tại!';
+		elseif exists (select 1 from "public"."USER" u where u."email" = p_email) then
+			p_err_code := '-1';
+			p_err_desc := 'Email đã tồn tại!';
+		else
+			INSERT INTO "public"."USER"
+			("username", "password", "email", "fullname", "score")
+			VALUES(p_username, p_pass, p_email,p_fullname, 0);
+		end if;
+	elsif p_action ='EDIT' then 
+		UPDATE "public"."USER" 
+		SET "fullname" = p_fullname, "email" = p_email, "score" = p_score
+		WHERE "username"=p_username;		
+	else
+		p_err_code := '-1';
+		p_err_desc := 'Error';
+	end if;	
+EXCEPTION
+  WHEN others THEN
+	p_err_code := '-1';
+	p_err_desc := 'Error';
+RAISE LOG  'prc_process_user:%, context: %','ERROR:', 'sqlstate: ' || sqlstate || ',sqlerrm: ' || sqlerrm ;
+end
+$function$
+;

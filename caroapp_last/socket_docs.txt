@@ -1,0 +1,320 @@
+io.sockets.emit("lenh", data): gửi dữ liệu đến tất cả client
+socket.broadcast.emit("lenh", data): gửi dữ liệu đến tất cả client nhưng không gửi đến bản thân
+socket.emit("lenh", data): gửi dữ liệu đến chính client đó
+io.sockets.in(idroom).emit("lenh", data): gửi đến các client có trong room
+
+CLIENT:
+1. closeRoom
+description: những client hoàn thành ván game, tự ngắt kết nối
+    request: 
+        lenh: "client-send-closeRoom"
+        data:
+    response: 
+        lenh: "server-send-arrRooms"
+        data: 
+            {
+                arrrooms: arrRooms,
+                status: true
+            }
+        Query:
+            io.sockets.emit("server-send-arrRooms", {
+                arrrooms: arrRooms,
+                status: true
+            });
+
+2. logout
+description: client đăng xuất khỏi ứng dụng, thông báo sẽ gửi đến các client khác.
+    request: 
+        lenh: "client-send-logout"
+        data: 
+    response: 
+        lenh: "server-send-arrUsers"
+        data: 
+            {
+                users: arrUsers,
+                status: "warning",
+                message: "Có một người đã rời đi!"
+            }
+        Query:
+            socket.broadcast.emit("server-send-arrUsers", {
+                users: arrUsers,
+                status: "warning",
+                message: "Có một người đã rời đi!"
+            });
+
+3. joinRoom
+description: client tham gia vào một room đã được tạo sẵn.
+    request: 
+        lenh: "client-send-joinRoom"
+        data: (int)idRoom
+TH1: nếu client đã tạo room hoặc đã đang ở trong một room
+    response: 
+        lenh: "server-send-enoughRoom"
+        data: 
+        Query:
+            socket.emit("server-send-enoughRoom");
+TH2: trái với TH1, sẽ nhận lại 3 request từ server
+    1
+    response: 
+        lenh: "server-send-arrRooms"
+        data: 
+            {
+                arrrooms: (array)arrRooms,
+                status: true
+            }
+        Query:
+            io.sockets.emit("server-send-arrRooms", {
+                arrrooms: arrRooms,
+                status: true
+            });
+    2
+    response: 
+        lenh: "server-send-gamer"
+        data: 
+            {
+                gamer: 2
+            }
+        Query:
+            socket.emit("server-send-gamer", {
+                gamer: 2
+            });
+    3 gửi đến hai client được ghép đôi với nhau
+    response: 
+        lenh: "server-send-matched"
+        data: 
+            {
+                username: (string)socket.userName,
+                matrix: (array2D)chessBoard,
+                status: true
+            }
+        Query:
+            io.sockets.in(socket.myroom).emit("server-send-matched", {
+                username: socket.userName,
+                matrix: chessBoard,
+                status: true
+            });
+4. play
+description: client gửi cách tọa độ điểm đến server.
+    request: 
+        lenh: "client-send-play"
+        data: 
+            {
+                username: (string)username,
+                gamer: (int)gamer,
+                matrix: (array2D)matrix,
+                x: (int)x, 
+                y: (int)y
+            }
+TH1: Nếu client cố tình gian lận, đánh nhiều lần liên tục thì ngăn chặn lại
+    response: 
+        lenh: "server-send-checkTurn"
+        data: 
+            {
+                status: false
+            }
+        Query:
+            socket.emit("server-send-checkTurn", {
+                status: false
+            });
+TH2: Trái với TH1
+    Kiểm tra nếu vị trí client chọn đã tồn tại thì gửi 
+    response: 
+        lenh: "server-send-checkExistMark"
+        data: 
+            {
+                status: true
+            }
+        Query:
+            socket.emit("server-send-checkTurn", {
+                status: false
+            });
+    Nếu thỏa mãn
+    response: 
+        lenh: "server-send-data"
+        data: 
+            {
+                name: (string)data.username,
+                matrix: (array2D)chessBoard,
+                x: (int)data.x,
+                y: (int)data.y,
+                mark: (int)mark,
+                total: (int)totalTurns,
+                game: (int)socket.gamereSults
+            }
+        Query:
+            io.sockets.in(socket.myroom).emit("server-send-data", {
+                name: data.username,
+                matrix: chessBoard,
+                x: data.x,
+                y: data.y,
+                mark: mark,
+                total: totalTurns,
+                game: socket.gamereSults
+            });
+
+5. Reset Resutl
+description: gửi đến server một yêu cầu làm mới kết quả sau một trận game.
+    request: 
+        lenh: "client-send-resetResult"
+        data: 
+    response: 
+        lenh: 
+        data:
+===========================END-Client===========================
+
+SERVER
+1. login
+description: Gửi về client thông tin đã kết nối
+    request: 
+        lenh: "server-send-login"
+        data:
+            {
+                status: true,
+                username: userName
+            }
+        query:
+            socket.emit("server-send-login", {
+                status: true,
+                username: userName
+            });
+
+2. List Users
+description: Gửi danh sách các user đang hiện online cho tất cả client
+    request: 
+        lenh: "server-send-arrUsers"
+        data:
+            {
+                users: arrUsers,
+                status: "success",
+                message: "Có một người mới tham gia!"
+            }
+        query1:
+            io.sockets.emit("server-send-arrUsers", {
+                users: arrUsers,
+                status: "success",
+                message: "Có một người mới tham gia!"
+            });
+        query2:
+            socket.broadcast.emit("server-send-arrUsers", {
+                users: arrUsers,
+                status: "warning",
+                message: "Có một người đã rời đi!"
+            });
+
+3. List Rooms
+description: Gửi danh sách các phòng đang hiện hữu
+    request: 
+        lenh: "server-send-arrRooms"
+        data:
+            {
+                arrrooms: arrRooms,
+                status: true
+            }
+        query:
+            io.sockets.emit("server-send-arrRooms", {
+                arrrooms: arrRooms,
+                status: true
+            });
+
+4. Gamer
+description: Xác định người chơi đi trước
+    request: 
+        lenh: "server-send-gamer"
+        data:
+            {
+                gamer: 1
+            }
+        query:
+            socket.emit("server-send-gamer", {
+                gamer: 1
+            });
+        note: gamer có thể ==1 hoặc ==2
+
+5. existRoom
+description: Kiểm tra client có đang tồn tại ở một phòng nào không
+    request: 
+        lenh: "server-send-existRoom"
+        data:
+            {
+                myroom: socket.myroom,
+                username: socket.userName
+            }
+        query:
+            socket.emit("server-send-existRoom", {
+                myroom: socket.myroom,
+                username: socket.userName
+            });
+
+6. matched
+description: Gửi thông tin ghép đôi cho 2 client đã được ghép chung
+    request: 
+        lenh: "server-send-matched"
+        data:
+            {
+                username: socket.userName,
+                matrix: chessBoard,
+                status: true
+            }
+        query:
+            io.sockets.in(socket.myroom).emit("server-send-matched", {
+                username: socket.userName,
+                matrix: chessBoard,
+                status: true
+            });
+        
+7. enoughRoom
+description: Gửi thông tin cho chính client rằng bạn không được phép tham gia vào phòng đó
+    request: 
+        lenh: "server-send-enoughRoom"
+        data:
+        query:
+            socket.emit("server-send-enoughRoom");
+
+8. checkExistMark
+description: Gửi thông tin cho chính client rằng tọa độ client đó chọn đã tồn tại
+    request: 
+        lenh: "server-send-checkExistMark"
+        data:
+        query:
+            socket.emit("server-send-checkExistMark");
+
+9. send-data
+description: Gửi thông tin cho 2 client đang chơi chung phòng rằng thông tin của một turn
+    request: 
+        lenh: "server-send-data"
+        data:
+            {
+                name: data.username,
+                matrix: chessBoard,
+                x: data.x,
+                y: data.y,
+                mark: mark,
+                total: totalTurns,
+                game: socket.gamereSults
+            }
+        query:
+            io.sockets.in(socket.myroom).emit("server-send-data", {
+                name: data.username,
+                matrix: chessBoard,
+                x: data.x,
+                y: data.y,
+                mark: mark,
+                total: totalTurns,
+                game: socket.gamereSults
+            });
+        note: socket.gamereSults có thể có 3 giá trị:
+            -1: chưa thi đấu
+            0: game kết thúc hòa
+            1: game kết thúc 
+                trường hợp ==1 thì nhớ kiểm tra name: data.username,
+                nếu mà đúng bằng với username của client đó thì show WIN
+                ngược lại show LOSE
+
+10. checkTurn
+description: Gửi thông tin cho chính client rằng không phải lượt của client đó, vui lòng đợi
+    request: 
+        lenh: "server-send-checkTurn"
+        data:
+        query:
+            socket.emit("server-send-checkTurn");
+
